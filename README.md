@@ -14,11 +14,3 @@ Après activation de Pages sur la branche `main` (dossier `/`) :
 
 - `index.html` — page web
 - `privacy_policy.md` — source texte
-
-## Publier
-
-```bash
-git push -u origin main
-```
-
-Puis sur GitHub : **Settings → Pages → Branch: main → / (root) → Save**.
