@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InterBot — Politique de confidentialité</title>
+  <meta name="description" content="Politique de confidentialité de l'application Discord InterBot : données collectées, rétention, droits RGPD et sécurité." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #1a1f24;
+      --muted: #4a5560;
+      --paper: #f3efe6;
+      --paper-2: #e8e2d4;
+      --accent: #0f6e56;
+      --accent-soft: rgba(15, 110, 86, 0.12);
+      --line: rgba(26, 31, 36, 0.12);
+      --max: 42rem;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.65;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #d7ebe3 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #efe6d2 0%, transparent 50%),
+        linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%);
+      min-height: 100vh;
+    }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max));
+      margin: 0 auto;
+      padding: 3.5rem 0 5rem;
+    }
+
+    .brand {
+      font-family: Fraunces, Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(2.4rem, 7vw, 3.6rem);
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      margin: 0 0 0.75rem;
+      animation: rise 0.7s ease both;
+    }
+
+    .lead {
+      margin: 0 0 2.5rem;
+      color: var(--muted);
+      font-size: 1.15rem;
+      max-width: 34rem;
+      animation: rise 0.7s ease 0.08s both;
+    }
+
+    .meta {
+      display: inline-block;
+      margin-bottom: 2rem;
+      padding: 0.35rem 0;
+      border-bottom: 2px solid var(--accent);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.95rem;
+      animation: rise 0.7s ease 0.16s both;
+    }
+
+    article {
+      animation: rise 0.8s ease 0.2s both;
+    }
+
+    h2 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.45rem;
+      margin: 2.4rem 0 0.85rem;
+      letter-spacing: -0.02em;
+    }
+
+    p { margin: 0 0 1rem; }
+    ul { padding-left: 1.2rem; margin: 0 0 1rem; }
+    li { margin: 0.35rem 0; }
+    a { color: var(--accent); }
+    a:hover { text-decoration-thickness: 2px; }
+    strong { font-weight: 600; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.75rem 0 1.25rem;
+      font-size: 0.98rem;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 0.65rem 0.55rem;
+      border-bottom: 1px solid var(--line);
+    }
+    th {
+      font-weight: 600;
+      color: var(--muted);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    tr:hover td { background: var(--accent-soft); }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+      background: var(--accent-soft);
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+    }
+
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+      animation: rise 0.7s ease 0.28s both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="brand">InterBot</p>
+    <p class="lead">Politique de confidentialité de l’application Discord — transparence sur les données, la rétention et vos droits.</p>
+    <p class="meta">Dernière mise à jour : 29 septembre 2026</p>
+
+    <article>
+      <p>
+        Cette politique décrit comment l’application Discord <strong>InterBot</strong> (« le Bot ») traite les données obtenues via l’API Discord (« API Data »), conformément à la
+        <a href="https://discord.com/developers/docs/policies-and-agreements/developer-policy">Politique pour les Développeurs Discord</a>
+        et au RGPD / lois équivalentes.
+      </p>
+
+      <h2>Responsable du traitement</h2>
+      <p>
+        L’opérateur du Bot (propriétaire de l’application Discord) est responsable du traitement. Contact : via le staff du serveur où le Bot est utilisé, ou le propriétaire de l’application sur le
+        <a href="https://discord.com/developers/applications">Portail Développeur Discord</a>.
+      </p>
+
+      <h2>Données collectées</h2>
+      <p>Selon les fonctionnalités activées sur un serveur :</p>
+      <table>
+        <thead>
+          <tr><th>Catégorie</th><th>Exemples</th><th>Finalité</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Identifiants</td><td>ID utilisateur, serveur, salon, message</td><td>Fonctionnement, modération</td></tr>
+          <tr><td>Profil</td><td>Pseudo, avatar, surnom (historique)</td><td>Logs profil, sécurité</td></tr>
+          <tr><td>Contenu messages</td><td>Extraits pour logs d’édition/suppression et preuves</td><td>Modération</td></tr>
+          <tr><td>Vocaux</td><td>Métadonnées présence, logs Plume, enregistrements ponctuels</td><td>Modération / preuves</td></tr>
+          <tr><td>Confessions</td><td>Texte anonyme + auteur côté staff</td><td>Modération</td></tr>
+          <tr><td>Support / tickets</td><td>Contenu des tickets</td><td>Assistance</td></tr>
+          <tr><td>Progression</td><td>XP, niveaux, badges, minutes vocales</td><td>Gamification</td></tr>
+          <tr><td>Sanctions</td><td>Warns, mutes, bans, contextes</td><td>Sécurité du serveur</td></tr>
+        </tbody>
+      </table>
+      <p>Le Bot <strong>ne revend pas</strong> les API Data et ne les utilise pas pour de la publicité ciblée.</p>
+
+      <h2>Bases légales</h2>
+      <ul>
+        <li><strong>Exécution du service</strong> demandé par les administrateurs du serveur (fonctionnalités du Bot).</li>
+        <li><strong>Intérêt légitime</strong> (art. 6.1.f RGPD) pour la prévention et la constatation d’abus (sanctions, preuves).</li>
+      </ul>
+
+      <h2>Conservation</h2>
+      <table>
+        <thead>
+          <tr><th>Données</th><th>Durée indicative</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Logs messages (salon Discord du bot)</td><td>~7 jours</td></tr>
+          <tr><td>Cache messages (mémoire)</td><td>~6 heures</td></tr>
+          <tr><td>Logs vocaux Plume (disque)</td><td>~30 jours</td></tr>
+          <tr><td>Enregistrements audio orphelins</td><td>~48 heures (supprimés après envoi au ticket)</td></tr>
+          <tr><td>Historique PP / Noms</td><td>jusqu’à 30 entrées / membre, effaçable via <code>/rgpd</code></td></tr>
+          <tr><td>Sanctions / bans / contextes</td><td>durée nécessaire à la sécurité (intérêt légitime)</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Sécurité</h2>
+      <ul>
+        <li>Chiffrement <strong>au repos</strong> (AES-256-GCM) des fichiers JSON métier.</li>
+        <li>Communications avec Discord via <strong>TLS</strong> (API / Gateway Discord).</li>
+        <li>Accès aux données limité aux opérateurs du Bot et au staff habilité du serveur.</li>
+      </ul>
+
+      <h2>Vos droits</h2>
+      <p>Sur chaque serveur où le Bot est présent :</p>
+      <ol>
+        <li><code>/rgpd</code> — consulter un résumé des données vous concernant.</li>
+        <li><code>/rgpd</code> — demander la suppression des données non nécessaires à la sécurité (niveaux, profils, badges, historiques PP/Noms, etc.).</li>
+        <li>Les données de <strong>modération</strong> (sanctions, bans) peuvent être conservées pour intérêt légitime.</li>
+      </ol>
+      <p>Vous pouvez aussi contacter le staff du serveur ou le propriétaire de l’application.</p>
+
+      <h2>Mineurs</h2>
+      <p>
+        Des mécanismes de vérification d’âge / rôles Mineur–Majeur peuvent être activés par le serveur.
+        Les moins de 13 ans (ou l’âge minimum légal local) ne doivent pas utiliser Discord ; le Bot s’aligne sur les règles Discord.
+      </p>
+
+      <h2>Modifications</h2>
+      <p>
+        Cette politique peut être mise à jour. La date en tête de document fait foi.
+        L’URL de cette page doit être renseignée dans le <strong>Developer Portal</strong> Discord (Privacy Policy URL).
+      </p>
+    </article>
+
+    <footer>
+      InterBot · Politique de confidentialité ·
+      <a href="./privacy_policy.md">Version Markdown</a>
+    </footer>
+  </main>
+</body>
+</html>
